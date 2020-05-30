@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Netclicks - все о сериалах</title>
+
+</head>
+
+<body>
+    <div class="left-menu">
+        <div class="hamburger active">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="left-menu__list">
+            <li>
+                <a href="#" id="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <span>ПОИСК</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="dropdown">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                    <span>РЕЙТИНГ</span>
+                </a>
+                <ul class="dropdown-list">
+                    <li>
+                        <a href="#" id="top-rated">
+                            <span>Топ сериалы</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="popular">
+                            <span>Популярные</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dropdown">
+                    <i class="fa fa-tv" aria-hidden="true"></i>
+                    <span>НОВЫЕ ЭПИЗОДЫ</span>
+                </a>
+                <ul class="dropdown-list">
+                    <li>
+                        <a href="#" id="today">
+                            <span>Сегодня</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="week">
+                            <span>На неделю</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <header>
+        <div class="container header-flex">
+            <hgroup class="title-wrapper">
+                <h1 class="title">Netclicks</h1>
+                <h2 class="subtitle">все о сериалах</h2>
+            </hgroup>
+
+            <section class="search">
+                <form class="search__form">
+                    <h2 class="search__form-head">Поиск</h2>
+                    <label class="search__form-block">
+                        <input type="text" class="search__form-input" id="searchText" placeholder="Введи название...">
+                    </label>
+                    <!-- <button type="submit">Поиск</button> -->
+                </form>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="tv-shows">
+                <h3 class="tv-shows__head">Результат поиска</h3>
+                <ul class="tv-shows__list"> </ul>
+                <ul class="pagination"></ul>
+            </section>
+
+        </div>
+    </main>
+
+    <div class="modal hide">
+        <div class="modal__content">
+            <div class="poster__wrapper">
+                <div class="poster">
+                    <div class="image__content">
+                        <img class="tv-card__img" src="img/no-poster.jpg" alt="Название шоу">
+                    </div>
+
+                </div>
+            </div>
+
+            <article class="modal__description">
+                <h2 class="modal__title">
+                    Название шоу
+                </h2>
+
+                <section class="genres">
+                    <h3>Жанр:</h3>
+                    <ul class="genres-list">
+                        <li>Документальный</li>
+                        <li>Мелодрама</li>
+                        <li>Мультфильм для взрослых</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Рейтинг</h3>
+                    <span class="rating">10</span>
+                </section>
+
+
+                <section class="header__info">
+
+
+                    <h3 dir="auto">Описание: </h3>
+                    <div class="overview" dir="auto">
+
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ut
+                            vero, commodi quaerat quasi animi nam corporis hic debitis nulla, ullam non. Quia cupiditate
+                            quo obcaecati hic. Molestiae, numquam natus!</p>
+
+                    </div>
+                    <p class="modal__link-wrapper">
+                        <a class="modal__link" href="https://google.com" target="_blanc">Оффициальная страница</a>
+                    </p>
+                </section>
+            </article>
+            <div class="cross">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="preloader">
+        <div class="preloader-wrapper">
+            <div class="preloader-one"></div>
+            <div class="preloader-one"></div>
+            <div class="preloader-one"></div>
+            <div class="preloader-one"></div>
+            <div class="preloader-two"></div>
+            <div class="preloader-three"></div>
+        </div>
+    </div>
+
+    <script src="script/main.js"></script>
+
+    <script src="https://use.fontawesome.com/c79e2f3459.js"></script>
+
+</body>
+
+</html>
